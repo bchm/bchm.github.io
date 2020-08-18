@@ -3,21 +3,24 @@
 - [Docker Hub](https://hub.docker.com/u/bastiaansd)
 
 ## Docker adventure
+18 Aug 2020
 
-I had some trouble in setting up Docker images. I will share the mistakes I made while experimenting and what I learned from it.
+I had some trouble in setting up Docker images in Kubernetes. I will share the mistakes I made while experimenting and what I learned from it.
 
 
 
 I'm following the video from [That Devops Guy to set up a docker directory](https://www.youtube.com/watch?v=d1ZMnV4yM1U). Here are my findings:
 
-- My first experimentation was to use the a Debian Buster Slim image and not a Alpine Linux image because [this website](https://pythonspeed.com/articles/alpine-docker-python/) says that 
-- the latest SLIM Buster doesn't seem to work because 
+**My first experimentation was to use the a Debian Buster Slim image and not a Alpine Linux image because [this website](https://pythonspeed.com/articles/alpine-docker-python/) says that Alpine can introduce obscure runtime bugs and actually make images bigger and not smaller.** 
+1. The latest SLIM Buster (python:3.8-slim) doesn't seem to work because the cgroup mount destination cannot be found. This can by the writing of this post be fixed by issuing the following two commands from [this comment on Github Issues](https://github.com/microsoft/WSL/issues/4189#issuecomment-518277265). Although I don't run this on Arch Linux and not in WSL this still works.
 
+``sudo mkdir /sys/fs/cgroup/systemd``
 
-alpine image is too heavy because of .... source: 
+``sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd``
 
-finally the heavy buster image worked perfectly. I still seem to have issues with the cgroups. But that is temporary solved by running the two commands from this github issue comment: https://github.com/microsoft/WSL/issues/4189#issuecomment-518277265
-
-When I turned on the Pod load balancer the external IP was constantly empty, localhost must be there.  and localhost could not be reached so I had to fix that by ......
-
-[...](https://stackoverflow.com/questions/44519980/assign-external-ip-to-a-kubernetes-service)
+2. Now to the next step: running the container in a local Kubernetes cluster via minikube.
+- Here I turned on the Pod load balancer. The external IP was constantly on pending like this: 
+``example-service   LoadBalancer   10.111.214.145   <pending>     80:30016/TCP     7d17h``
+- localhost must be there.  and localhost could not be reached at that moment so I had to fix that by applying [this answer from Stackoverflow](https://stackoverflow.com/questions/44110876/kubernetes-service-external-ip-pending)
+- The reason was that minikube doesn't have LoadBalancer integrated out of the box!
+- The solution was to implement a Ingress Controller.
