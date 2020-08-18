@@ -22,5 +22,8 @@ I'm following the video from [That Devops Guy to set up a docker directory](http
 - Here I turned on the Pod load balancer. The external IP was constantly on pending like this: 
 ``example-service   LoadBalancer   10.111.214.145   <pending>     80:30016/TCP     7d17h``
 - localhost must be there.  and localhost could not be reached at that moment so I had to fix that by applying [this answer from Stackoverflow](https://stackoverflow.com/questions/44110876/kubernetes-service-external-ip-pending)
-- The reason was that minikube doesn't have LoadBalancer integrated out of the box!
-- The solution was to implement a Ingress Controller.
+- The reason was that minikube doesn't have LoadBalancer turned on by default without turning on the minikube tunnel!
+- To turn on the minikube tunnel run:
+`minikube tunnel`
+- After that, running `kubectl get svc` gives an IP address back which works in the browser!
+- Another solution is to implement a Ingress Controller which I will try in the future.
