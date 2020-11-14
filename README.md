@@ -12,9 +12,9 @@ I'm following the video from [That Devops Guy to set up a docker directory](http
 **My first experimentation was to use the a Debian Buster Slim image and not a Alpine Linux image because [this website](https://pythonspeed.com/articles/alpine-docker-python/) says that Alpine can introduce obscure runtime bugs and actually make images bigger and not smaller.** 
 1. The latest SLIM Buster (python:3.8-slim) doesn't seem to work because the cgroup mount destination cannot be found. This can by the writing of this post be fixed by issuing the following two commands from [this comment on Github Issues](https://github.com/microsoft/WSL/issues/4189#issuecomment-518277265). Although I don't run this on Arch Linux and not in WSL this still works.
 
-  ``sudo mkdir /sys/fs/cgroup/systemd``
+    ``sudo mkdir /sys/fs/cgroup/systemd``
   
-  ``sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd``
+    ``sudo mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd``
 1. Now to the next step: running the container in a local Kubernetes cluster via minikube.
   Here I turned on the Pod load balancer. The external IP was constantly on pending like this: 
   ``example-service   LoadBalancer   10.111.214.145   <pending>     80:30016/TCP     7d17h``
