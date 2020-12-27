@@ -23,24 +23,31 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   
-# Scopes
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
-      
- 
-# Pagination
-paginate:           5
-paginate_path:      /page:num/
+author: "Bastiaan Mourik"
+
+
+# Minima: show excerpts in the frontpage
+show_excerpts: true
+
+minima:
+  date_format: "%d-%m-%Y"
+
+# Minima: custom header links
+header_pages:
+  - _pages/frontpage.md
+  - about.md
+  - _pages/archive.md
+
+include:
+    - _post
+
+exclude: 
+    - .gitignore
+    - docker-compose.yml
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+
 
 permalink: /:categories/:title/
