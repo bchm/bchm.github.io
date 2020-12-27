@@ -20,3 +20,5 @@ github_username:  jekyll
 theme: minima
 plugins:
   - jekyll-feed
+
+permalink: /:categories/:title/
