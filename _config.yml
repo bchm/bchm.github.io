@@ -19,6 +19,8 @@ github_username:  jekyll
 # Build settings
 theme: minima
 plugins:
+  - jekyll
   - jekyll-feed
+  - jekyll-seo-tag
 
 permalink: /:categories/:title/
