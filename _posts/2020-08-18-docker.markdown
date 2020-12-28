@@ -1,12 +1,9 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Docker adventure
+date:   2020-08-18 15:19:23
+categories: caddy VPS
 ---
-
-## Docker adventure
-18 Aug 2020
-18-8
 
 I had some trouble in setting up Docker images in Kubernetes. I will share the mistakes I made while experimenting and what I learned from it.
 

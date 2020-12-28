@@ -3,8 +3,8 @@ author: "Bastiaan Mourik"
 title: Bastiaan's small blog
 email: me@bastiaa.nl
 description:
-  DevOps learner \n
-  Open-source software enthusiast \n
+  DevOps learner ♦
+  Open-source software enthusiast ♦
   House music
 
 
@@ -27,9 +27,9 @@ minima:
 
 # Minima: custom header links
 header_pages:
+  - _pages/archive.md
   - _pages/frontpage.md
   - _pages/about.md
-  - _pages/archive.md
 
 include:
     - _pages
