@@ -1,30 +1,20 @@
-description: >
-  DevOps learner
-  - Open-source software enthusiast
-  - House music
+author: "Bastiaan Mourik"
+
 title: Bastiaan's small blog
 email: me@bastiaa.nl
 description:
   DevOps learner \n
   Open-source software enthusiast \n
   House music
-#   Write an awesome description for your new site here. You can edit this
-#   line in _config.yml. It will appear in your document head meta (for
-#   Google search results) and in your feed.xml site description.
-# baseurl: "/blog" # the subpath of your site, e.g. /blog
-# url: "https://bastiaa.nl" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
 
-# Build settings
+
 theme: minima
-plugins:
-  - jekyll
-  - jekyll-feed
-  - jekyll-seo-tag
-  
-author: "Bastiaan Mourik"
 
+# Minima social links
+twitter_username: jekyllrb
+github_username: bchm
+linkedin_username: mourik
+rss: rss
 
 # Minima: show excerpts in the frontpage
 show_excerpts: true
@@ -39,7 +29,7 @@ header_pages:
   - _pages/archive.md
 
 include:
-    - _post
+    - _pages
 
 exclude: 
     - .gitignore
