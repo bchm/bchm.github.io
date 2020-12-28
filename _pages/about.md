@@ -4,6 +4,8 @@ layout: page
 title: About me
 ---
 
-More details about me on this page with links to my social media profiles and so on.
+# About me
 
-![](https://www.jorgesanz.net/assets/imgs/me/jsanz_small4.png)
+- [LinkedIn](https://www.linkedin.com/in/mourik)
+- [Github](https://www.github.com/bchm)
+- [Docker Hub](https://hub.docker.com/u/bastiaansd)

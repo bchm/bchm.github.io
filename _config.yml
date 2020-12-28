@@ -9,6 +9,9 @@ description:
 
 
 theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Minima social links
 twitter_username: jekyllrb
