@@ -48,6 +48,3 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
-
-
-permalink: /:categories/:title/
