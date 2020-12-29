@@ -14,7 +14,10 @@ plugins:
   - jekyll-seo-tag
 
 # Minima social links
-twitter_username: jekyllrb
+telegram_username: bastv
+mastodon_username: bchm
+instagram_username: boembastiaan
+
 github_username: bchm
 linkedin_username: mourik
 rss: rss
