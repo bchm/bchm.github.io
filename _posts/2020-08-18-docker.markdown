@@ -2,7 +2,7 @@
 layout: page
 title: Docker adventure
 date:   2020-08-18 15:19:23
-categories: caddy VPS
+categories: Docker Kubernetes
 ---
 
 I had some trouble in setting up Docker images in Kubernetes. I will share the mistakes I made while experimenting and what I learned from it.
