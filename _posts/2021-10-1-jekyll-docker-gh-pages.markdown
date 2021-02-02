@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "testpost"
+title:  "Exact copy of Github Pages in a hosted Docker container"
 date:   2021-10-1 15:19:23
-categories: caddy VPS
+categories: Github_pages Docker
 ---
 
-test
+TODO
