@@ -1,8 +1,8 @@
 ---
 permalink: /
 layout: home
-title: Welcome
+title: Welcome!
 list_title: My blog posts
 ---
 
-My website, thanks for visiting
+My website, thanks for visiting!
