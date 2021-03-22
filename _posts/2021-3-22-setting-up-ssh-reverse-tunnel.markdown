@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Setting up a reverse SSH tunnel"
-date:   2020-12-27 15:19:23
+date:   2021-3-22 15:19:23
 categories: ssh reverse tunnel
 ---
 
