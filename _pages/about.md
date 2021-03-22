@@ -4,4 +4,4 @@ layout: page
 title: About me
 ---
 
-TODO
+I am a student based in the Netherlands.

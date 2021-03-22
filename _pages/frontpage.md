@@ -5,5 +5,4 @@ title: Welcome!
 list_title: My blog posts
 ---
 
-My website, thanks for visiting!
-[My Curriculum Vitae](https://bastiaa.nl/markdown-cv/)
+Thanks for visiting! Here is [my Curriculum Vitae](https://bastiaa.nl/markdown-cv/)
