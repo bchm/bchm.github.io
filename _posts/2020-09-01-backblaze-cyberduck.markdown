@@ -5,7 +5,9 @@ date:   2020-09-01 15:19:23
 categories: cryptomator cyberduck
 ---
 
-TLDR: Cryptomator does not work perfectly when using S3-like storage for small files and can fail pretty often in my experience. This is what fixed most of the issues: https://help.backblaze.com/hc/en-us/articles/217994508-Cyberduck-How-to-install-and-upload-a-file
+TLDR:
+I'm now using restic for backups to S3-like storage. I will do a blog post in the future about a bash script which backups a complete Nextcloud instance to Backblaze.
+Cryptomator does not work perfectly when using S3-like storage for small files and can fail pretty often in my experience. This is what fixed most of the issues: https://help.backblaze.com/hc/en-us/articles/217994508-Cyberduck-How-to-install-and-upload-a-file
 In this link is described what needs to be changed in the Connection Settings to have more successful transfers.
 
 If a file is not finished yet, Backblaze may be able to see that the file was not uploaded completely. Then it is visible in the bucket overviews and the path of the encrypted file can be deleted. Then the encrypted file is not visible in the Cryptomator vault anymore.
