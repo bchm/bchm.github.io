@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Setting up a reverse SSH tunnel with 2 factor auth"
+title:  "Creating reverse SSH tunnel on server with 2 factor authentication SSH access"
 date:   2021-3-22 15:19:23
 categories: ssh reverse tunnel
 ---
-
-# Creating reverse SSH tunnel on server with 2 factor authentication SSH access
 
 I have used different guides which I combined together to make a reverse SSH tunnel which works with 2 factor authentication for extra security.
 
