@@ -3,9 +3,7 @@ author: "Bastiaan Mourik"
 title: Bastiaan's small blog
 email: me@bastiaa.nl
 description:
-  Learning about computers ♦
-  Figuring out life ♦
-  21 years old
+  Interested about IT automation
 
 
 theme: minima
@@ -14,7 +12,6 @@ plugins:
   - jekyll-seo-tag
 
 # Minima social links
-instagram_username: bastiaa.nl
 github_username: bchm
 linkedin_username: mourik
 rss: rss
