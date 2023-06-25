@@ -3,7 +3,7 @@ author: "Bastiaan Mourik"
 title: Bastiaan's small blog
 email: me@bastiaa.nl
 description:
-  Interested about IT automation
+  Cloud engineer
 
 
 theme: minima
@@ -14,7 +14,6 @@ plugins:
 # Minima social links
 github_username: bchm
 linkedin_username: mourik
-rss: rss
 
 # Minima: show excerpts in the frontpage
 show_excerpts: true
