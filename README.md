@@ -1,1 +1,1 @@
-My website containing a blog from when I was in college.
+My website containing my blog.
