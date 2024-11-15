@@ -4,4 +4,4 @@ layout: page
 title: About me
 ---
 
-Cloud engineer at Solvinity.
+Cloud engineer at Blue Stack.
