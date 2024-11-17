@@ -1,7 +1,7 @@
 ---
 permalink: /
 layout: home
-title: Welcome!
+title: Bastiaans website
 list_title: My blog posts
 ---
 
