@@ -58,7 +58,8 @@ ssh-keygen
 ```
 
 ```bash
-cd .ssh/```
+cd .ssh/
+```
 
 ```bash
 touch authorized_keys
