@@ -1,0 +1,39 @@
+author: "Bastiaan Mourik"
+
+title: Bastiaans blog
+email: me@bastiaa.nl
+description:
+  Cloud engineer
+
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima social links
+github_username: bchm
+linkedin_username: mourik
+
+# Minima: show excerpts in the frontpage
+show_excerpts: true
+
+minima:
+  date_format: "%d-%m-%Y"
+
+# Minima: custom header links
+header_pages:
+  - _pages/archive.md
+  - _pages/about.md
+
+include:
+    - _pages
+
+exclude: 
+    - .gitignore
+    - docker-compose.yml
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - vendor
